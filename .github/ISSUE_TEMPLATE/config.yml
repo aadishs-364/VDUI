@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report sensitive content privately
+    url: https://github.com/aadishs-364/VDUI/blob/main/SECURITY.md
+    about: Please report anything sensitive privately, not as a public issue.

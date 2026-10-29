@@ -11,6 +11,7 @@ by a chart — and shows the design decisions I made to fix it.
 ## 0. Product UX: letting visitors see value before signing in
 **Users:** PES students checking placement stats for the first time.
 **Problem:** every page sat behind a login, so first-time visitors met a sign-in form before seeing anything worth signing in for.
+**Figma file:** [Placement Tracker — First-visit flow](https://www.figma.com/design/DQlgbODIUkb2ULjPSAE4AX/Placement-Tracker-%E2%80%94-First-visit-flow?node-id=0-1&t=M95Q0SL1f33KmCE6-1)
 
 ![User flow before and after](images/ux-flow.png)
 

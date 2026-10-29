@@ -8,6 +8,26 @@ by a chart — and shows the design decisions I made to fix it.
 
 ---
 
+## 0. Product UX: letting visitors see value before signing in
+**Users:** PES students checking placement stats for the first time.
+**Problem:** every page sat behind a login, so first-time visitors met a sign-in form before seeing anything worth signing in for.
+
+![User flow before and after](images/ux-flow.png)
+
+| Before: login wall | After: browse first |
+|---|---|
+| ![Before](images/ux-before-login-wall.png) | ![After](images/ux-after-landing.png) |
+
+| Sign-in asked only when needed | Login card on the real theme tokens |
+|---|---|
+| ![Sign-in prompt](images/ux-after-signin-prompt.png) | ![Login card](images/ux-login-card.png) |
+
+**Design decisions**
+- Aggregated data is already anonymous, so reading it no longer requires an account; only submitting or viewing personal records does.
+- The login card used colour tokens that didn't exist, so inputs washed out; moving it onto the shared design-system tokens restored contrast in light and dark themes.
+- Signing in to submit sends you to the login page and back to the offer form afterwards (next=/submit), so the action isn't lost.
+- Shipped as merged pull requests: [see the PRs](https://github.com/Audatic07/pesu-placement-tracker/pulls?q=is%3Apr+author%3Aaadishs-364+is%3Amerged)
+
 ## 1. Pre-publish ethics review
 **Users:** a regional manager about to send a performance report to the whole company.
 **Problems she raised:** no clear reading order, a chart that breaks on a grayscale printer, an axis that turns a
